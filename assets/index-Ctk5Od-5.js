@@ -75,6 +75,7 @@ pre, a {\r
   box-sizing: border-box;\r
   padding: 3%;\r
   gap: 1vh;\r
+  overflow-y: auto;\r
 }\r
 \r
 /**\r
@@ -156,7 +157,7 @@ pre, a {\r
  */\r
 \r
  .title {\r
-  font-size: clamp(1rem, 2rem, 4rem);\r
+  font-size: clamp(0.6rem, 2rem, 4rem);\r
   font-weight: bold;\r
 }\r
 \r
@@ -166,7 +167,7 @@ pre, a {\r
  */\r
 \r
 .sub-title {\r
-  font-size: clamp(0.8rem, 1.4rem, 3rem);\r
+  font-size: clamp(0.5rem, 1.4rem, 3rem);\r
   font-weight: bold;\r
   text-decoration: underline;\r
 }\r
@@ -177,7 +178,7 @@ pre, a {\r
  */\r
 \r
 .content {\r
-  font-size: clamp(0.6rem, 1.2rem, 2rem);\r
+  font-size: clamp(0.4rem, 1.2rem, 2rem);\r
 }\r
 \r
 /**\r
@@ -196,7 +197,7 @@ pre, a {\r
  */\r
  \r
  .link {\r
-    font-size: clamp(0.6rem, 1.2rem, 2rem);\r
+    font-size: clamp(0.4rem, 1.2rem, 2rem);\r
   }\r
   \r
 /**\r
