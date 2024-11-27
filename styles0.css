@@ -1,0 +1,152 @@
+/**
+ * Hey there! 👋
+ * I’m Denis, a Computer Engineering student
+ * at Jönköping University.
+ *
+ * A quick shoutout to Samuel Reed for the inspiration behind this project!
+ * 
+ * Let’s roll up our sleeves and make this drag page 
+ * something fun and interactive. Shall we?
+ */
+
+/** 
+ * Let's make everything transition smoothly. It's all in the details! 
+ */
+
+* {
+  transition: all 1s;
+}
+
+/**
+ * Time to set the stage.
+ * We'll start with a sleek, dark background.
+ * Something easy on the eyes.
+ */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1F2833;
+}
+
+/**
+ * Oops! Looks like we need to fix the text color
+ * so it doesn't blend into the background. One sec!
+ */
+
+pre, a {
+  color: white;
+}
+
+/**
+ * There we go! Much better, right?
+ * While we're at it, let's sprinkle in some colors
+ * to make the code pop.
+ */
+
+.selector { 
+  color: #E69F0F; 
+}
+.selector .key { 
+  color: #64D5EA; 
+}
+.key { 
+  color: #64D5EA; 
+}
+.value { 
+  color: #BE84F2; 
+}
+.value.px { 
+  color: #1b9930; 
+}
+
+/**
+ * Perfect! Now, let’s tidy things up a bit.
+ * Moving all this code into its own section will keep it neat.
+ */
+
+.main-page-parent {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3%;
+  gap: 1vh;
+}
+
+/**
+ * Brace yourself for some bouncing around!
+ * We're adjusting things until we hit the sweet spot.
+ * Don’t get dizzy. 😅
+ */
+
+.main-page-parent {
+  justify-content: center;
+}
+
+/* 
+ * Aligning and organizing the content. 
+ * A good foundation makes everything better! 
+ */
+
+.main-page-child {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: start;
+  gap: 1vh;
+}
+
+/**
+ * Almost there, I promise! Hang tight.
+ */
+
+.scroll-box {
+  padding-left: 2%;
+  padding-right: 20%;
+  padding-top: 2%;
+  background-color: #0B0C10;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/**
+ * And.. voila!
+ * Let's make the text feel cozy and readable.
+ */
+
+.scroll-box {
+  font-family: monospace;
+  font-size: clamp(0.5rem, 0.9rem, 1.8rem);
+}
+.comment { 
+  color: #857F6B; 
+  font-style: italic; 
+}
+
+/**
+ * There we go, looking more organized already.
+ * Time to add some flair with borders and shadows.
+ * A little magic dust for the design!
+ */
+ 
+.scroll-box {
+  border: 1px solid #45A29E;
+  scrollbar-color: #45A29E #1F2833;
+  box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+/**
+ * Much better, right?
+ * Now let's deliver the content you came for.
+ */
