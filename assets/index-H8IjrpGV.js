@@ -1,4 +1,4 @@
-(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function s(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(t){if(t.ep)return;t.ep=!0;const o=s(t);fetch(t.href,o)}})();const k=`/**\r
+(function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function s(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(t){if(t.ep)return;t.ep=!0;const o=s(t);fetch(t.href,o)}})();const v=`/**\r
  * Hey there! 👋\r
  * I’m Denis, a Computer Engineering student\r
  * at Jönköping University.\r
@@ -26,8 +26,8 @@
 html, body {\r
   margin: 0;\r
   padding: 0;\r
-  height: 100%;\r
-  width: 100%;\r
+  width: 100vw;\r
+  height: 100vh;\r
   background-color: #1F2833;\r
 }\r
 \r
@@ -70,8 +70,8 @@ pre, a {\r
 .main-page-parent {\r
   display: flex;\r
   flex-direction: row;\r
+  width: 100vw;\r
   height: 100vh;\r
-  width: 100%;\r
   box-sizing: border-box;\r
   padding: 3%;\r
   gap: 1vh;\r
@@ -185,7 +185,7 @@ pre, a {\r
  * Ping me, I promise not to timeout! Get it? Ha. Ha.\r
  * Alright, time for the fun part!\r
  * Here's a sneak peek of what I've been working on.\r
- */`,v=`\r
+ */`,L=`\r
 /**\r
  * I know, it's not much to show yet. 😅\r
  * But hey, that's just the start—plenty more to come soon!\r
@@ -207,7 +207,7 @@ pre, a {\r
 * Until next time—stay awesome! ✌️\r
 */\r
 \r
-`,L=`Denis Ureke\r
+`,B=`Denis Ureke\r
 \r
 Contact\r
 \r
@@ -217,24 +217,24 @@ DenisUreke at GitHub\r
 \r
 `,C=`Portfolio\r
 \r
-Some of the work I have done.\r
+Some of my work.\r
 \r
 https://github.com/DenisUreke/IOS-LinkPalm-final\r
 https://github.com/DenisUreke/Andriod-BattleShip-Multiplayer-Game\r
 https://github.com/DenisUreke/CSS-animations-website\r
 https://github.com/DenisUreke/Tetris\r
-https://github.com/DenisUreke/Python-Game`,I=document.getElementById("contact-content"),x=document.getElementById("style-tag"),h=document.getElementById("code-content"),A=document.getElementById("portfolio-content");let l="";async function y(e,n,s){let r="";const t=g(n);console.log(t);for(let o=0;o<t.length;o++){const a=t[o];r=B(r,a,s),e.innerHTML=r,await m(20)}if(l.trim()!==""){const o=l.trim();s===0?r=b(r,o):s===1&&(r=w(r,o)),e.innerHTML=r,l=""}}function B(e,n,s){if(l+=n,n===`
-`){const r=l.trim();s===0?e=b(e,r):s===1&&(e=w(e,r)),l=""}else e+=n;return e}let i=0;function b(e,n){return e.includes(n)?i===0?(i+=1,e.replace(n,`<span class="title">${n}
+https://github.com/DenisUreke/Python-Game`,x=document.getElementById("contact-content"),A=document.getElementById("style-tag"),u=document.getElementById("code-content"),I=document.getElementById("portfolio-content");let l="";async function y(e,n,s){let r="";const t=h(n);console.log(t);for(let o=0;o<t.length;o++){const a=t[o];r=S(r,a,s),e.innerHTML=r,await g(20)}if(l.trim()!==""){const o=l.trim();s===0?r=w(r,o):s===1&&(r=k(r,o)),e.innerHTML=r,l=""}}function S(e,n,s){if(l+=n,n===`
+`){const r=l.trim();s===0?e=w(e,r):s===1&&(e=k(e,r)),l=""}else e+=n;return e}let i=0;function w(e,n){return e.includes(n)?i===0?(i+=1,e.replace(n,`<span class="title">${n}
 
 </span>`)):i===1?(i+=1,e.replace(n,`<span class="sub-title">${n}
 
 </span>`)):i===2||i===3?(i++,e.replace(n,`<span class="content">${n}
 </span>`)):i===4?(i++,e.replace(n,`<span class="content">${n}
 
-</span>`)):e.replace(n,`<span class="content">${n}</span>`):e+`<span>${n}</span><br>`}let p=0;function w(e,n){if(e.includes(n)){if(p===0)return p+=1,e.replace(n,`<span class="title">${n}
+</span>`)):e.replace(n,`<span class="content">${n}</span>`):e+`<span>${n}</span><br>`}let d=0;function k(e,n){if(e.includes(n)){if(d===0)return d+=1,e.replace(n,`<span class="title">${n}
 
-</span>`);if(p===1)return p+=1,e.replace(n,`<span class="sub-title">${n}
+</span>`);if(d===1)return d+=1,e.replace(n,`<span class="sub-title">${n}
 
-</span>`);if(p>=2){let s=S(n);return e.replace(n,`<span class="link"><a href="${n.trim()}" target="_blank">${s}</a></span>
-`)}return e.replace(n,`<span class="content">${n}</span>`)}return e+`<span>${n}</span><br>`}function S(e){let n="",s=0;for(let r=e.length-1;r>=0;r-=1)if(e[r]==="/"){s=r+1;break}for(let r=s;r<=e.length-1;r++)n+=e[r];return n}let c="";async function u(e){let n="";for(let s=0;s<e.length;s++){const r=e[s];c=U(c,r),c.slice(-8).includes("/</span>")&&(c+="<br>"),r==="}"&&(c+="<br>");const o=c.slice(-2),a=/([a-zA-Z]\.|\.{2})/;h.innerHTML=c,(a.test(o)||r==="?"||r==="!")&&await m(1200),(r==="}"||r===",")&&await m(500),h.scrollTop=h.scrollHeight,window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"}),n+=r,(r===";"||r==="}")&&(x.textContent+=n,n=""),await m(20)}}let d=!1;const z=/(\/\*(?:[^](?!\/\*))*\*)$/,D=/([a-zA-Z- ^\n]*)$/,E=/([^:]*)$/,F=/(.*)$/,H=/\dp/,P=/p$/;function U(e,n){return d&&n!=="/"?e+=n:n==="/"&&d===!1?(d=!0,e+=n):n==="/"&&e.slice(-1)==="*"&&d===!0?(d=!1,e=e.replace(z,'<span class="comment">$1/</span>')):n===":"?e=e.replace(D,'<span class="key">$1</span>:'):n===";"?e=e.replace(E,'<span class="value">$1</span>;'):n==="{"?e=e.replace(F,'<span class="selector">$1</span>{'):n==="x"&&H.test(e.slice(-2))?e=e.replace(P,'<span class="value px">px</span>'):e+=n,e}function g(e){return e.replace(/[\r]/g,"").replace(/^\s+/gm,"").replace(/\s+$/gm,"").replace(/\n+/g,`
-`).trim()}let f=!1;const O=document.getElementById("toggleButton");O.addEventListener("click",()=>{f=!f});function m(e){return f?new Promise(n=>setTimeout(n,0)):new Promise(n=>setTimeout(n,e))}async function M(e,n,s){console.log("Starting with cleanedone:",e),await u(e),console.log("Finished cleanedone, moving to contact"),await y(I,L,0),console.log("Finished contact, starting cleanedtwo:",n),await u(n),await y(A,C,1),await u(N)}const R=g(k),j=g($),N=g(v);M(R,j);
+</span>`);if(d>=2){let s=z(n);return e.replace(n,`<span class="link"><a href="${n.trim()}" target="_blank">${s}</a></span>
+`)}return e.replace(n,`<span class="content">${n}</span>`)}return e+`<span>${n}</span><br>`}function z(e){let n="",s=0;for(let r=e.length-1;r>=0;r-=1)if(e[r]==="/"){s=r+1;break}for(let r=s;r<=e.length-1;r++)n+=e[r];return n}let c="";async function f(e){let n="";for(let s=0;s<e.length;s++){const r=e[s];c=O(c,r),c.slice(-8).includes("/</span>")&&(c+="<br>"),r==="}"&&(c+="<br>");const o=c.slice(-2),a=/([a-zA-Z]\.|\.{2})/;u.innerHTML=c,(a.test(o)||r==="?"||r==="!")&&await g(1200),(r==="}"||r===",")&&await g(500),u.scrollTop=u.scrollHeight,window.scrollTo({top:document.body.scrollHeight,behavior:"smooth"}),n+=r,(r===";"||r==="}")&&(A.textContent+=n,n=""),await g(20)}}let p=!1;const E=/(\/\*(?:[^](?!\/\*))*\*)$/,D=/([a-zA-Z- ^\n]*)$/,F=/([^:]*)$/,H=/(.*)$/,P=/\dp/,U=/p$/;function O(e,n){return p&&n!=="/"?e+=n:n==="/"&&p===!1?(p=!0,e+=n):n==="/"&&e.slice(-1)==="*"&&p===!0?(p=!1,e=e.replace(E,'<span class="comment">$1/</span>')):n===":"?e=e.replace(D,'<span class="key">$1</span>:'):n===";"?e=e.replace(F,'<span class="value">$1</span>;'):n==="{"?e=e.replace(H,'<span class="selector">$1</span>{'):n==="x"&&P.test(e.slice(-2))?e=e.replace(U,'<span class="value px">px</span>'):e+=n,e}function h(e){return e.replace(/[\r]/g,"").replace(/^\s+/gm,"").replace(/\s+$/gm,"").replace(/\n+/g,`
+`).trim()}let m=!1;const b=document.getElementById("toggleButton");b.addEventListener("click",()=>{m=!m,b.innerText=m?"Calm Down!":"Hurry Up!"});function M(){document.getElementById("toggleButton").classList.add("hidden")}function g(e){return m?new Promise(n=>setTimeout(n,0)):new Promise(n=>setTimeout(n,e))}async function R(e,n,s){console.log("Starting with cleanedone:",e),await f(e),console.log("Finished cleanedone, moving to contact"),await y(x,B,0),console.log("Finished contact, starting cleanedtwo:",n),await f(n),await y(I,C,1),await f(G),M()}const j=h(v),N=h($),G=h(L);R(j,N);
