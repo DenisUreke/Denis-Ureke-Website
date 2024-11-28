@@ -61,10 +61,15 @@ pre {
       font-size: clamp(0.4rem, 1rem, 1.2rem);
     }
     .content {
-      font-size: clamp(0.4rem, 0.9rem, 1rem);
+      font-size: clamp(0.4rem, 0.6rem, 1rem);
     }
     .link {
-      font-size: clamp(0.4rem, 0.9rem, 1rem);
+      font-size: clamp(0.4rem, 0.6rem, 1rem);
+    }
+
+    #toggleButton {
+
+      bottom: 87%
     }
   }
 

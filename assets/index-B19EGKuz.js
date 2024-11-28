@@ -217,7 +217,7 @@ DenisUreke at GitHub\r
 \r
 `,C=`Portfolio\r
 \r
-Some of my work.\r
+Some of my work\r
 \r
 https://github.com/DenisUreke/IOS-LinkPalm-final\r
 https://github.com/DenisUreke/Andriod-BattleShip-Multiplayer-Game\r
