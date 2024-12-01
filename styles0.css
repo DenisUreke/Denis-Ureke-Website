@@ -75,7 +75,6 @@ pre, a {
   box-sizing: border-box;
   padding: 3%;
   gap: 1vh;
-  overflow-y: auto;
 }
 
 /**
