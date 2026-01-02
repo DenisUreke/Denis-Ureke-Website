@@ -1,7 +1,7 @@
 (function(){const n=document.createElement("link").relList;if(n&&n.supports&&n.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&r(a)}).observe(document,{childList:!0,subtree:!0});function s(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(t){if(t.ep)return;t.ep=!0;const o=s(t);fetch(t.href,o)}})();const v=`/**\r
  * Hey there! 👋\r
- * I’m Denis, a Computer Engineering student\r
- * at Jönköping University.\r
+ * I’m Denis, a MES Solution Engineer\r
+ * at Nobia.\r
  *\r
  * A quick shoutout to Samuel Reed for the inspiration behind this project!\r
  * \r
