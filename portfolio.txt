@@ -2,7 +2,6 @@ Portfolio
 
 Some of my work
 
-https://github.com/DenisUreke/Console-Backend
 https://github.com/DenisUreke/IOS-LinkPalm-final
 https://github.com/DenisUreke/Andriod-BattleShip-Multiplayer-Game
 https://github.com/DenisUreke/CSS-animations-website
